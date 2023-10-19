@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend"
+              inherit_id="web.assets_backend">
+        <xpath expr="."
+               position="inside">
+            <script type="text/javascript"
+                    src="/en_base_import/static/src/js/base_action_manager_x2many.js"/>
+            <link rel="stylesheet"
+                  href="/en_base_import/static/src/css/base_action_manager_x2many.css"
+                  type="text/css"/>
+        </xpath>
+    </template>
+</odoo>

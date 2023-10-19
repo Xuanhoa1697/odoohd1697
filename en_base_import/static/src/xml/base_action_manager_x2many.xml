@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template"
+           xml:space="preserve">
+    <t t-name="en_base_import.context_sub_menu">
+        <div class="context_sub_menu">
+            <button class="fa fa-download btn_export_data" title="Export Data"/>
+            <button class="fa fa-cloud-upload btn_import_data" title="Import Data"/>
+        </div>
+    </t>
+</templates>
