@@ -1,13 +1,13 @@
 {
-    "name": "Encapital Base Import",
+    "name": "Export/Import One2Many",
     "summary": "",
     "description": """
-    Encapital Base Action Export/Import Detail
+    Base Action Export/Import Detail
 ===========================
-    Encapital Base Action Export/Import Detail
+    Base Action Export/Import Detail
 """,
     "category": "Extra Tools",
-    "author": "xuhoOdoo",
+    "author": "xuanhoaOdoo",
     "version": "1.0.0",
     "depends": ['base','base_import'],
     'data': [
