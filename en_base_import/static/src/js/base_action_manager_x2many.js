@@ -37,7 +37,7 @@ odoo.define('en_base_import.relational_fields', function (require) {
         },
         _onExport: function () {
             if (this.mode == 'edit') {
-                return this.do_warn('Vui lòng tạo xong bản ghi để sử dụng chức năng này!')
+                return this.do_warn('Create Before Export')
             }
             this._getExportBaseDialogWidget();
         },
@@ -54,7 +54,7 @@ odoo.define('en_base_import.relational_fields', function (require) {
         },
         _onImport: function (e) {
             if (this.mode == 'edit') {
-                return this.do_warn('Vui lòng tạo xong bản ghi để sử dụng chức năng này!')
+                return this.do_warn('Create Before Import')
             }
             var self = this;
             $('.context_import_menu').remove();
