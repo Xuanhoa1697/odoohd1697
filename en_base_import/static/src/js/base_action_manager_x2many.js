@@ -4,22 +4,14 @@ odoo.define('en_base_import.relational_fields', function (require) {
     var FieldX2Many = require('web.relational_fields').FieldX2Many;
     var DataImport = require('base_import.import').DataImport;
     var core = require('web.core');
-    var data = require('web.data');
-    var Dialog = require('web.Dialog');
-    var dialogs = require('web.view_dialogs');
     var QWeb = core.qweb;
     var DataWebExport = require('web.DataExport');
-    var rpc = require("web.rpc");
 
     FieldX2Many.include({
         events: _.extend({}, FieldX2Many.prototype.events, {
             'click .btn_export_data': '_onExport',
             'click .btn_import_data': '_onImport'
         }),
-        on_attach_callback: function () {
-            var self = this;
-            this._super.apply(this, arguments);
-        },
         _render: function () {
             var self = this;
             $('.context_sub_menu').remove();
