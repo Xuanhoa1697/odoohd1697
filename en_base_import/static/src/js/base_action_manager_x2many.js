@@ -16,10 +16,6 @@ odoo.define('en_base_import.relational_fields', function (require) {
             'click .btn_export_data': '_onExport',
             'click .btn_import_data': '_onImport'
         }),
-        on_attach_callback: function () {
-            var self = this;
-            this._super.apply(this, arguments);
-        },
         _render: function () {
             var self = this;
             $('.context_sub_menu').remove();
