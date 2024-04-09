@@ -17,7 +17,7 @@
         'static/src/xml/*.xml'
     ],
     'license': 'LGPL-3',
-    'price': 65,
+    'price': 5,
     'currency': 'EUR',
     'images': [
         'static/description/bgAction.png',
