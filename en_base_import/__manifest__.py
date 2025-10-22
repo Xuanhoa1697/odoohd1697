@@ -6,8 +6,8 @@
 ===========================
     Base Action Export/Import Detail
 """,
-    "category": "Extra Tools",
-    "author": "xuanhoaOdoo",
+    'author': 'Cloud Open Technologies/K8 Team',
+    'category': 'Services',
     "version": "1.0.0",
     "depends": ['base','base_import'],
     'data': [
