@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<templates id="template"
-           xml:space="preserve">
-    <t t-name="en_base_import.context_sub_menu">
-        <div class="context_sub_menu">
-            <button class="fa fa-download btn_export_data" title="Export Data"/>
-            <button class="fa fa-cloud-upload btn_import_data" title="Import Data"/>
-        </div>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.ListRenderer.Rows" t-name="en_base_import.ListRenderer.Rows" t-inherit-mode="extension">
+        <xpath expr="//td[hasclass('o_field_x2many_list_row_add')]" position="inside">
+            <a href="#"
+                t-if="isOne2manySubList"
+                role="button"
+                class="ml16"
+                t-att-tabindex="props.list.editedRecord ? '-1' : '0'"
+                t-on-click.stop.prevent="() => this.x2m_import()">Import</a>
+
+            <a href="#"
+                t-if="isX2ManySubList"
+                role="button"
+                class="ml16"
+                t-att-tabindex="props.list.editedRecord ? '-1' : '0'"
+                t-on-click.stop.prevent="() => this.x2m_export()">Export</a>
+        </xpath>
     </t>
+
 </templates>
